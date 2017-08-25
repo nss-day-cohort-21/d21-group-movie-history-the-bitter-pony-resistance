@@ -21,11 +21,11 @@ function getMovies(user) {
 }
 
 function getLast(id) {
-
+    
 }
 
 function saveMovie() {
-    
+
 }
 
 function getSavedMovies(uid) {
@@ -44,8 +44,6 @@ function watchedMovie(editId) {
 function rateMovie(editId) {
 
 }
-
-
 
 
 
