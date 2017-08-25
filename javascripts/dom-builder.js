@@ -39,9 +39,6 @@ function makeMovieCards(moviesArr) {
                                   </div>
 
                               </div>`
-
-
-
       );
   }
 

@@ -106,6 +106,7 @@ domBuilder.makeMovieCards(testArray);
  
             $(".rateYo").rateYo({
                 rating: 0,
+                numStars: 10,
                 fullStar: true
             });
         });
