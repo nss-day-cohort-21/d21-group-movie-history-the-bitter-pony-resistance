@@ -2,8 +2,7 @@
 
 let user = require("./user.js");
 let domBuilder = require("./dom-builder.js");
-
-require("./searchAPI");
+let searchAPI = require("./searchAPI");
 
 let testArray = [
           {"cast": ["Nicholas Cage", "Tom Cruise", "Matt Damon", "Jessica Biel", "Andre 3000" ],
@@ -19,6 +18,8 @@ let testArray = [
           "releaseDate": "2001"
           }
 ];
+
+searchAPI.submitAPISearch("star%20wars");
 
 domBuilder.makeMovieCards(testArray);
 
