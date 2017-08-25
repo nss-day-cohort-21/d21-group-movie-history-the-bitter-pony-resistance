@@ -4,12 +4,19 @@ let firebase = require("./firebaseConfig"),
 	currentUser = null;
 
 
+
 function logInGoogle() {
+	$("#loginBtn").attr('disabled', true);
+	$("#logoutBtn").attr('disabled', false);
 	return firebase.auth().signInWithPopup(provider);
+
 }
 
 function logOut(){
+	$("#logoutBtn").attr('disabled', true);
+	$("#loginBtn").attr('disabled', false);
 	return firebase.auth().signOut();
+
 }
 
 function setUser(val){
@@ -26,6 +33,8 @@ firebase.auth().onAuthStateChanged(function(user){
 		currentUser = user.uid;
 	}else{
 		currentUser = null;
+
+		
 		console.log("NO USER LOGGED IN");
 	}
 });

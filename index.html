@@ -21,13 +21,13 @@
 
         <div class="form-flex">
 
-            <button class="btn btn-outline-success my-2 my-sm-0" id="findMovie" type="submit">Find Movies</button>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" id="findMovie" type="submit">Find Movies</button>
 
-            <button class="btn btn-outline-success my-2 my-sm-0" id="searchMyMovies" type="submit">Search My Movies</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="searchMyMovies" type="submit">Search My Movies</button> -->
 
             <button class="btn btn-outline-primary my-2 my-sm-0" id="loginBtn" type="submit">Login</button>
 
-            <button class="btn btn-outline-primary my-2 my-sm-0" id="logoutBtn" type="submit" disabled>Logout</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="logoutBtn" type="submit" disabled>Logout</button>
 
         </div>
 
@@ -42,79 +42,18 @@
         </form>
     </div>     -->
 
-    <div id="w-uw-Toggle" >
+    <div id="w-uw-Toggle" class="hidden">
         <!-- unwatched/watched button thingy -->
+        <button type="button" class="btn btn-outline-dark btn-lg" id="untracked" value="Untracked">Untracked</button>
         <button type="button" class="btn btn-outline-dark btn-lg" id="watched" value="Watched">Watched</button>
-        <button type="button" class="btn btn-outline-dark btn-lg" id="unwatched" value="Unwatched" disabled>Unwatched</button>
+        <button type="button" class="btn btn-outline-dark btn-lg" id="unwatched" value="Unwatched" >Unwatched</button>
+        <button type="button" class="btn btn-outline-dark btn-lg" id="favorites" value="Favorites" >Favorites</button>
+        
     </div>
 
     <div class="container">
 
         <div id="cardHolder" class="row">
-
-            <!-- <div class="row"> -->
-                <!-- this is where the cards are going to be displayed -->
-                
-                <!-- <div class="moovie col-sm-4">
-
-                    <div class="card">
-                        <img class="card-img-top" src="img/falloutvaultboythumbsup.jpg" alt="Card image cap">
-                        <h4 class="card-title">Movie Title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="DT card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="card-text">Release Date</p>
-                        <a href="#" class="breadcrumb card-link">Add to Watchlist</a>
-                        <a href="#" class="breadcrumb card-link unwatched">Remove From Watchlist</a>
-                        <a class="rateYo card-link breadcrumb unwatched" style="margin:auto"></a>
-                    </div>
-
-                </div>
-
-                <div class="moovie col-sm-4">
-
-                    <div class="card">
-                        <img class="card-img-top" src="img/falloutvaultboythumbsup.jpg" alt="Card image cap">
-                        <h4 class="card-title">Movie Title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="DT card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="card-text">Release Date</p>
-                        <a href="#" class="breadcrumb card-link">Remove From Watchlist</a>
-                        <a class="hidden rateYo card-link breadcrumb" style="margin:auto"></a>
-                    </div>
-
-                </div>
-
-                <div class="moovie col-sm-4">
-
-                    <div class="card">
-                        <img class="card-img-top" src="img/falloutvaultboythumbsup.jpg" alt="Card image cap">
-                        <h4 class="card-title">Movie Title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="DT card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="card-text">Release Date</p>
-                        <a href="#" class="breadcrumb card-link">Remove From Watchlist</a>
-                        <a class="hidden rateYo card-link breadcrumb" style="margin:auto"></a>
-                    </div>
-
-                </div>
-            
-                <div class="moovie col-sm-4">
-
-                    <div class="card">
-                        <img class="card-img-top" src="img/falloutvaultboythumbsup.jpg" alt="Card image cap">
-                        <h4 class="card-title">Movie Title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="DT card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="card-text">Release Date</p>
-                        <a href="#" class="breadcrumb card-link">Remove From Watchlist</a>
-                        <a class="hidden rateYo card-link breadcrumb" style="margin:auto"></a>
-                    </div>
-
-                </div> -->
-
-
-
-            <!-- </div> -->
 
         </div>
 
