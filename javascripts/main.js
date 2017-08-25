@@ -3,7 +3,7 @@
 let user = require("./user.js");
 let domBuilder = require("./dom-builder.js");
 
-// require("./searchAPI");
+require("./searchAPI");
 
 let testArray = [
           {"cast": ["Nicholas Cage", "Tom Cruise", "Matt Damon", "Jessica Biel", "Andre 3000" ],
