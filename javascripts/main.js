@@ -143,5 +143,3 @@ $("#cardHolder").click((e)=> {
     /******/
 
 // module.exports = {makeTestVar};
-                    
-                    
