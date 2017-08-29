@@ -6,7 +6,7 @@ let searchAPI = require("./searchAPI");
 let dbInt = require("./db-interaction.js");
 
 // movieArray is global array to hold whatever current collection of movies we want to
-// display on DOM.  Could be filtered, or just initial API search, whatever. 
+// display on DOM.  Could be filtered, or just initial API search, whatever.
 // let movieArray = searchAPI.apiMovieArray;
 
 
@@ -55,7 +55,7 @@ let dbInt = require("./db-interaction.js");
         // $("#searchMyMovies").click(function(){
         //     console.log("clicked on Search My Movies");
         // });
-        
+
         //Login button click id="loginBtn"
         $("#loginBtn").click(function(){
             // console.log("clicked on Signin");
@@ -73,15 +73,15 @@ let dbInt = require("./db-interaction.js");
         });
 
         //Logout button click id="logoutBtn"
-        
+
         $("#logoutBtn").on('click', function(){
             // console.log("logout clicked");
             user.logOut();
-            // loadMoviesToDOM();  
+            // loadMoviesToDOM();
             $("#logoutBtn").attr('disabled', true);
-            $("#loginBtn").attr('disabled', false);          
+            $("#loginBtn").attr('disabled', false);
         });
-        
+
 
     /******/
 
@@ -93,7 +93,7 @@ let dbInt = require("./db-interaction.js");
             $('.breadcrumb').toggleClass('unwatched');
             $("#watched").attr('disabled', true);
             $("#unwatched").attr('disabled', false);
-            
+
         });
 
         //Click Function for Unwatched button
@@ -103,18 +103,20 @@ let dbInt = require("./db-interaction.js");
             $("#unwatched").attr('disabled', true);
             $("#watched").attr('disabled', false);
         });
-        
+
     /******/
 
     /***Card Funtionality***/
 
-        //Add to watch list 
+        //Add to watch list
         //If logged in push to database/else login alert
 $("#cardHolder").click((e)=> {
-    console.log("e.target.classList", e.target.classList);
+    console.log("the card's value", e.title);
+    console.log("e.target.classList", e.target.classList.value);
     if (e.target.classList.contains("add-to-watchlist")) {
         console.log("e.target.parentNode.parentNode.id", e.target.parentNode.parentNode.id);
-        dbInt.saveMovie(e.target.parentNode.parentNode.id);
+        dbInt.saveMovie(e.target.parentNode.parentNode.id)
+        .then();
         // console.log("here is apiMovieArray", searchAPI.apiMovieArray);
     }
 
@@ -125,7 +127,7 @@ $("#cardHolder").click((e)=> {
     if (e.target.classList.contains("card-img-top")) {
         console.log("e.target.parentNode.parentNode.parentNode.id", e.target.parentNode.parentNode.parentNode.id);
     }
-    
+
     // domBuilder.makeMovieCards(movieArray);
 });
 
@@ -133,7 +135,7 @@ $("#cardHolder").click((e)=> {
 
         //Rate Watched Movie
         // $(function () {
- 
+
         //     $(".rateYo").rateYo({
         //         rating: 0,
         //         fullStar: true
@@ -143,5 +145,3 @@ $("#cardHolder").click((e)=> {
     /******/
 
 // module.exports = {makeTestVar};
-                    
-                    
