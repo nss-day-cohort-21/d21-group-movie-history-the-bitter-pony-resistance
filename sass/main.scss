@@ -9,7 +9,6 @@ body {
 #navBarContainter {
     position: fixed;
     width: 100%;
-    color: white;
     z-index: 12;
 }
 
@@ -27,6 +26,7 @@ body {
 
 .moovie {
     margin-bottom: 20px;
+    display: flex;
 }
 
 #foooter {
@@ -46,6 +46,8 @@ body {
     align-items: center;
     padding: 12px,;
     min-width: 180px;
+    background-color: darkslategray;
+
 }
 
 #card-link {
@@ -62,4 +64,29 @@ svg {
 
 .unwatched {
     display: none; 
+}
+
+
+.hidden {
+    display: none;
+  
+body {
+    background-image: url("http://www.publicdomainpictures.net/pictures/30000/velka/film-background-1334067655hUG.jpg");
+}
+
+#navBarContainter {
+    color: white;
+}
+
+.btn-outline-primary {
+    color: maroon;
+    background-color: transparent;
+    background-image: none;
+    border-color: maroon;
+}
+
+.btn-outline-primary:disabled {
+    color: maroon;
+    background-color: transparent;
+
 }
